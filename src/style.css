@@ -382,6 +382,7 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul {
+        color: black;
         position: fixed;
         top: 0;
         right: -200px;
@@ -391,13 +392,9 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0px;
         background-image: linear-gradient(
-        to right,
+        to bottom,
         #462523 0,
         #cb9b51 22%,
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
         #462523 100%
         ); 
     }
