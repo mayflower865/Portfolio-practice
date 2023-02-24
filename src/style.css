@@ -355,6 +355,7 @@ form btn {
 }
 nav .fa-solid {
     display: none;
+    color: #cb9b51
 }
 #msg {
     color: #cb9b51;
@@ -380,6 +381,8 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 25px;
+        padding-bottom: 18px;
+
     }
     nav ul {
         color: black;
