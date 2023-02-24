@@ -365,7 +365,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     .container {
-    padding: 10px 1%;  
+    padding: 5px 3%;  
     }
     #header {
     background-image: url(../images/phone-background.jpg);
