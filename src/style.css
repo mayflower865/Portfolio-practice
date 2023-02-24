@@ -362,6 +362,9 @@ nav .fa-solid {
     margin-top: -40px;
     display: block;
 }
+.contact-left p {
+    text-decoration: none;
+}
 
 
 @media only screen and (max-width: 600px) {
