@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website - May Longfellow</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/27b231caf5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,21 +15,25 @@
 <div class="container">
 <nav>
 <img src="images/logo.png" class="logo">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">Contact</a></li>
+<ul id="sidemenu">
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+
+<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 </ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
 </nav>
 <div class="header-text">
-<p>Front-End <span>Web Development</span></p>
-<h1>May <span>Longfellow</span><br />Nashville, <span>Tennessee</span></h1>
+<p><span>Front-End Web Development<span></span></p>
+<h1><span>May Longfellow</span></h1>
+<p><span>Nashville, Tennessee</span></p>
 </div>
 </div>
 </div>
     
-
 <div id="about">
 <div class="container">
 <div class="row">
@@ -36,11 +41,184 @@
 <img src="images/main-img.png">
 </div>
 <div class="about-col-2">
-<h1>About</h1>
+<h1 class="sub-title">About Me</h1>
+<p>Highly motivated developer dedicated to writing clear, concise, robust code
+that works. Striving to never stop learning and improving. I have expierence in HTML,
+advanced CSS, JavaSCript, Responsive, and React. I currently reside in Tennessee 
+with my fiance, and our two children. Me and my fiance have always shared a passion 
+for information technology and development. We are both self established buisness owners
+and self taught. I enjoy creating my own projects with my free time, and being with my family.
+</p>
+
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab(`skills`)">Skills</p>
+<p class="tab-links" onclick="opentab(`education`)">Education</p>
+</div>
+
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+<li><span>Web Development</span><br>Web app Development</li>
+<li><span>App Development</span><br>Building Android/IOS apps</li>
+</ul>
+</div>
+
+<div class="tab-contents" id="education">
+<ul>
+<li><span>2022-2023</span><br>Coding at SheCodes.io</li>
+<li><span>2022-2023</span><br>API at SheCodes.io</li>
+<li><span>2022-2023</span><br>Responsive at SheCodes.io</li>
+<li><span>2022-2023</span><br>React at SheCodes.io</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
+</div>
+
+<div id="services">
+<div class="container">
+<h1 class="sub-title">My Services</h1>
+<div class="services-list">
+
+<div>
+<i class="fa-solid fa-code"></i>
+<h2>Web Design & Development</h2>
+<p>Creating an elegent and strategic design personalized
+specifically for my clientele. Then turning the prototype into 
+the perfect website using written code. 
+</p>
+</div>
+
+<div>
+<i class="fa-solid fa-crop-simple"></i>
+<h2>UI/UX Design & Development</h2>
+<p>Focusing on the creativity and accuracy of how a website
+functions; Using buttons, toggles, navigation bars, and other visual elements
+that you interact with.
+</p>
+</div>
+
+<div>
+<i class="fa-brands fa-app-store"></i>
+<h2>App Design & Development</h2>
+<p>Building applications that operate on various systems 
+through the use of one or more programming languages written
+in different softwares.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+<h1 class="sub-title">My Work</h1>
+<div class="work-list">
+
+ <div class="work">
+<img src="images/dahmer.png">
+<div class="layer">
+<h3>Netflix Landing Page</h3>
+<p>Built with HTML, and CSS, this app displays
+a brief summary and teaser to the Netflix original, "DAHMER" tv-series.
+Click the "Watch" button in the app to take you right to the show!</p>
+<a href="https://genuine-crisp-97a1c0.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+
+<div class="work">
+<img src="images/weather.png">
+<div class="layer">
+<h3>Weather App</h3>
+<p>Built with HTML, JavaScript, API, and CSS, this app displays a live weekly 
+forecast giving you the opportunity to search any city in the world to retrieve current 
+data, date, and time. Search your city!</p>
+<a href="https://fantastic-basbousa-3afd1f.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="contact">
+<div class="container">
+<div class="row">
+
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p><i class="fa-solid fa-paper-plane"></i> mayflowerlongfellow@gmail.com</p>
+<p><i class="fa-solid fa-mobile-screen-button"></i> (931) 266-6243</p>
+<div class="social-icons">
+<a href="https://www.instagram.com/tuamor.may/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/maylongfellow/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://github.com/mayflower865" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+<a href="https://www.shecodes.io/graduates/55170-s-may-longfellow" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+
+</div>
+</div>
+
+<div class="contact-right">
+<form name="submit-to-google-sheet">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn">Submit</button>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+
+<div class="copyright">
+<p>Copyright ©️ Coded with <i class="fa-solid fa-heart"></i> by May Longfellow</p>
+</div>
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+var  sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+sidemenu.style.right = "0";
+}
+function closemenu(){
+sidemenu.style.right = "-200px";
+}
+</script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz2BOwBPJDdEsGFIz12_SRz9YGmCPx3VXRICwVFfdIpXRNOFdPuWxQ3Jdd9bMlboH2L_A/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => {
+msg.innerHTML = "Message sent successfully"
+setTimeout(function(){
+msg.innerHTML = ""
+},5000)
+form.reset()
+})
+.catch(error => console.error('Error!', error.message))
+})
+</script>
 
 </body>
 </html>
