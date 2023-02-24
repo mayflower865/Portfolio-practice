@@ -431,7 +431,9 @@ nav .fa-solid {
         font-size: 14px;
     }
     .logo {
-        width: 280px;
+        width: 275px;
     }
-
+    nav ul li a {
+        color: black;
+    }
 }
